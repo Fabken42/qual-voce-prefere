@@ -1,0 +1,89 @@
+.btn-enviar {
+    width: 60%;
+    max-width: 360px;
+}
+
+.card-opt{
+    position: relative;
+}
+
+.card-opt::after{
+    content: 'OU';
+    color: white;
+    background-color: black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 50%;
+    font-size: 1.1em;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.img-opt {
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    height: 300px;
+}
+
+.col-esquerda{
+    border-right: 7px solid black;
+}
+
+.col-direita{
+    border-left: 7px solid black;
+}
+
+@media screen and (max-width: 991px) {
+    .img-opt {
+        width: 180px;
+        height: 180px;
+    }
+    .col-esquerda{
+        border: none;
+        margin-bottom: 7px;
+    }
+    .col-direita{
+        border: none;
+        margin-top: 7px;
+    }
+    .card-opt::after{
+        padding: 11px;
+    }
+}
+
+.bg-vermelho {
+    background: rgb(175, 0, 0);
+}
+
+.bg-vermelho:hover {
+    cursor: pointer;
+}
+
+.opt1--selecionado {
+    background: rgb(255, 30, 30);
+}
+
+.bg-azul {
+    background: rgb(0, 0, 175);
+}
+
+.bg-azul:hover {
+    cursor: pointer;
+}
+
+.opt2--selecionado {
+    background: rgb(30, 30, 255);
+}
+
+.logo-lixeira {
+    margin-bottom: 5px;
+    transition: color ease-in-out 0.2s;
+}
+
+.logo-lixeira:hover {
+    cursor: pointer;
+    color: red;
+}
