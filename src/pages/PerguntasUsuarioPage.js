@@ -34,8 +34,7 @@ export default function PerguntasUsuarioPage() {
     if (user)
         return (
             <>
-                <CriaPergunta adicionarPublicacaoCriada={adicionarPublicacaoCriada} />
-                <PerguntasUsuario uid={user.uid} idPublicacoesCriadas={idPublicacoesCriadas} />
+                ola sou pregunsta usuario page
             </>
         );
 };
